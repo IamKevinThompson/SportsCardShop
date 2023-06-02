@@ -1,0 +1,113 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #00ccff;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #d10000;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+/*.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+*/
+
+
+
+
+.pack{
+  display: flex; /* display as flex item */
+  flex-direction: column; /* stack content vertically */
+  align-items: center; /* horizontally center content */
+  text-align: center; /* center text */
+  margin: 0 10px; /* add margin to each item */
+}
+
+.pack img {
+  width: 100%; /* make image full width of container */
+  max-width: 300px; /* set maximum width for image */
+  height: auto; /* maintain aspect ratio */
+}
+
+.pack h3 {
+font-size: medium;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+  
+
+
+
+.pack p{
+font-size: smaller;
+font-family:monospace
+
+}
+
+h1{
+  font-size: 70px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-style: oblique;
+font-variant: small-caps; }
+
+
+
+
